@@ -1,0 +1,45 @@
+/* header {
+    display: flex;
+    justify-content: center;
+    padding-left: 30px;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    border-bottom: 0.5pt  solid var(--accent-color1); Header line 
+} */
+
+.topbar {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    background-color: var(--primary-color);
+    /* z-index: 0; */
+}
+
+.hide {
+    display: none;
+}
+
+    /* Enable hover only on non-touch devices */
+    @media (hover: hover) and (pointer: fine) {
+  
+    }
+    
+    /* Mobile */
+    @media (max-width: 700px) {
+      
+    }
+    
+    /* @keyframes rotate {
+      from {
+        transform: rotate(360deg);
+      }
+      to {
+        transform: rotate(0deg);
+      }
+    } */
+    

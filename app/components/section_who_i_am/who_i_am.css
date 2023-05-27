@@ -1,0 +1,88 @@
+.whoIamdiv {
+    visibility: 1;
+    display: block;
+    height: fit-content;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 12% 5% 8%;
+  }
+  
+.whoIamdiv h1 {
+    font-size: 45pt;
+    /* font-family: 'Parisienne', cursive; */
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+    padding-bottom: 20px;
+    color: var(--accent-color1);
+}
+
+.whoIamdiv h2 {
+    font-size: 42pt;
+    /* font-family: 'Parisienne', cursive; */
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+    padding-bottom: 20px;
+    color: var(--accent-color1);
+}
+
+.whoIamdiv h3 {
+    font-size: 22pt;
+    /* font-family: 'Amita', cursive; */
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+    font-weight: lighter;
+    text-align: left;
+    padding: 10px 0;
+    color: var(--accent-color1);
+}
+  
+.whoIamdiv p {
+    font-size: 18pt;
+    line-height: 20pt;
+    /* font-family: 'Amita', cursive; */
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    text-align: left;
+    color: var(--accent-color1);
+    width: 100%;
+}
+
+.avatar {
+    width: 30%;
+}
+
+.icon__div {
+    padding-top: 30px;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 8%;
+}
+
+.icon__button {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    border-width: 2.5px;
+    border-color: var(--accent-color1);
+    background-color: transparent;
+    border-style: solid;
+    transition: all 0.25s ease; 
+    box-shadow: 6px 4px 6px 1px #7d7d7d;
+    opacity: 1;
+}
+
+.icon__button:hover {
+    margin: -4.5px 0 0 0;
+    box-shadow: 6px 7.5px 8px 1px #888888;
+    opacity: 1;
+}
+
+.icon__button :first-child {
+    width: 30px;
+    height: auto;
+}

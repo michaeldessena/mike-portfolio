@@ -1,17 +1,54 @@
-.nameDiv {
-  display: flex;
-  }
+@keyframes fadeout {
+  0% {visibility: 1;}
+  100% {visibility: 0;}
+}
+@keyframes fadein {
+  0% {visibility: 0;}
+  100% {visibility: 1;}
+}
 
 .name {
-    font-family: 'Parisienne', cursive;
-    font-style: italic;
-    font-weight: 100;
-    font-size: 35pt;
-    color: var(--accent-color2);
+    font-family: 'Inconsolata', monospace;
+    font-weight: 300;
+    font-size: 30pt;
+    color: var(--accent-color1);
+    /* color: white; */
+  }
+
+.nameJumping {
+  transition: all 0.35s ease-in-out;
+  display: inline-flex; /* this is needed for use translateY*/
 }
-  
+
+.nameJumping:hover {
+  transform: translate(0%, -15%);
+}
+
+.BigName {
+  color: var(--accent-color1);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 100pt;
+  font-weight: 500;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  transition-property: fadein;
+  transition-duration: 4s;
+}
+
+.hide {
+  transition-property: fadeout;
+  transition-duration: 4s;
+} 
+
+
+
   /* Enable hover only on non-touch devices */
   @media (hover: hover) and (pointer: fine) {
+
   }
   
   /* Mobile */

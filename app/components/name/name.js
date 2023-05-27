@@ -3,12 +3,15 @@
 
 import React from 'react';
 
-export default class Name extends React.Component {
-  render() {
+import styles from './name.css'
+
+import JumpingLetter from './jumpingLetter.js'
+
+
+export default function Name(props) {
     return (
-      <div className="nameDiv">
-        <p className="name">Michael Dessena</p>
-      </div>
+        <p className="name" style={props.style}><JumpingLetter text={"Michael"}/> <JumpingLetter text={"Dessena"}/></p>
       );
   }
-}
+
+

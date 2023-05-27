@@ -1,9 +1,13 @@
 :root {
   /* COLOR PALETTE */
-  --primary-color: #0B0B09; /*very dark black*/
-  --accent-color1: #FF7F50; /*coral orange*/
-  --accent-color2: #32CD32; /*lime green*/
-  --accent-color3: #6495ED; /*cornflower blue*/
+  /* --primary-color: #0B0B09; very dark black */
+  /* --accent-color1: #FF7F50; coral orange */
+  /* --accent-color2: #32CD32; lime green */
+  /* --accent-color3: #6495ED; cornflower blue */
+  --primary-color: #fff1e0;
+  --accent-color1: #1F1F1F;
+  --accent-color2: #353935;
+  --accent-color3: #6495ED;
   
   /* old css*/
   --max-width: 1100px;

@@ -1,0 +1,30 @@
+.close{
+    width: 26px;
+    height: 26px;
+    position: relative;
+    background-color: none;
+}
+
+.close_left, .close_right{
+    content:'';
+    position:absolute;
+    width:14px;
+    height:2px;
+    background-color: black;
+    top:12px;
+}
+
+.close_left{
+    -webkit-transform:rotate(45deg);
+    -moz-transform:rotate(45deg);
+    transform:rotate(45deg);
+    left: 25%;
+    top: 50%;
+}
+.close_right{
+    -webkit-transform:rotate(-45deg);
+    -moz-transform:rotate(-45deg);
+    transform:rotate(-45deg);
+    right: 25%;
+    top: 50%;
+}
