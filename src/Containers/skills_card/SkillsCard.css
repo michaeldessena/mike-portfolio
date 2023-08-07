@@ -1,0 +1,72 @@
+.skills_card {
+    width: 190px;
+    padding: 0 20px;
+    background-color: var(--primary-color);
+    display: block;
+    flex-wrap: wrap;
+}
+
+.indicator_wrapper {
+    width: 100%;
+    height: 120px;
+    margin: 18px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill_card_text {
+    width: 100%;
+    height: 60pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill_card_text h1 {
+    text-align: center;
+    color: var(--accent-color1);
+    font-size: 20pt;
+}
+
+
+
+/* Set the sizes of the elements that make up the progress bar */
+.indicator_circle1 {
+    width: 110px;
+    height: 110px;
+    background-image: conic-gradient(var(--accent-color3) 0%, var(--accent-color3) 40%, var(--accent-color2) 60%, var(--accent-color2) 100%);
+    clip-path: circle(48%);
+}
+
+.indicator_circle1_over {
+    width: 100%;
+    height: 100%;
+}
+
+.indicator_circle2 {
+    width: 100%;
+    height: 100%;
+    clip-path: circle(38%);
+    background: var(--primary-color);
+}
+
+.indicator_circle2 h2 {
+    width: 100%;
+    height: 100%;
+    /* TEXT */
+    display: flex;
+    color: var(--accent-color1);
+    align-items: center;
+    justify-content: center;
+    font-size: 24pt;
+}
+
+
+.skills_card_children_div {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--accent-color1);
+}
