@@ -1,5 +1,6 @@
 .edu_wrapper {
-    width: 60%;
+    max-width: 850px;
+    width: 80%;
     height: 80%;
     margin: auto;
     color: var(--accent-color1);
@@ -9,8 +10,8 @@
     flex: 1;
     color: var(--accent-color1);
     text-align: center;
-    padding-bottom: 90px;
-    font-size: 40pt;
+    padding-bottom: var(--title-padding-bottom);
+    font-size: var(--title-size);
     font-family: 'Times New Roman', Times, serif;
   }
 
@@ -59,7 +60,8 @@
 .edu_path_div_line {
     height: calc(100% - 44px);
     width: 3px;
-    background-color: var(--accent-color1);
+    /* background-color: var(--accent-color1); */
+    background-image: linear-gradient(var(--primary-color), var(--accent-color1) 15%, var(--accent-color1) 65%, var(--primary-color) 100%);
     margin-top: 12px;
 }
 
@@ -103,4 +105,83 @@
     grid-column: -1;
     color: var(--accent-color1);
     font-family: 'Inconsolata', monospace;
+}
+
+@media (max-width: 1000px) {
+    .edu_wrapper {
+        min-width: none;
+        /* width: 80%; */
+        height: 80%;
+        margin: auto;
+        color: var(--accent-color1);
+    }
+}
+
+@media (max-width: 750px) {
+    .edu_wrapper {
+        min-width: none;
+        width: 80%;
+        height: 80%;
+        margin: auto;
+        color: var(--accent-color1);
+    }
+
+    .edu_grid {
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .edu_path_div {
+        display: none;
+    }
+
+    .edu_entry_div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .edu_mobile_line {
+        display: block;
+        margin: 0 auto;
+        height: 70px;
+        width: 2px;
+        /* background-color: var(--accent-color1); */
+        background-image: linear-gradient(var(--accent-color1), var(--primary-color));
+    }
+
+    .edu_mobile_line_shadow {
+        background-image: linear-gradient(var(--accent-color1), var(--primary-color));
+    }
+    
+    .edu_entry_div h1 {
+        font-size: 20pt;
+        display: block;
+        text-align: center;
+        padding-bottom: 5px;
+    }
+    
+    .edu_entry_div span {
+        display: block;
+        text-align: center;
+        padding-bottom: 5px;
+    }
+    
+    .edu_entry_div span h2 {
+        font-size: 16pt;
+        display: block;
+        text-align: center;
+        padding-bottom: 5px;
+    }
+    
+    .edu_entry_div span h3 {
+        font-size: 16pt;
+        display: block;
+        text-align: center;
+        padding-bottom: 5px;
+    }
 }

@@ -11,8 +11,8 @@
     flex: 1;
     color: var(--accent-color1);
     text-align: center;
-    padding-bottom: 90px;
-    font-size: 40pt;
+    padding-bottom: var(--title-padding-bottom);
+    font-size: var(--title-size);
     font-family: 'Times New Roman', Times, serif;
 }
 
@@ -132,3 +132,40 @@
     color: var(--primary-color);
 }
 
+@media (max-width: 1000px) {
+    .work_wrapper {
+        margin: 0 100px;
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .work_card h2 {
+        font-size: 26pt;
+        padding-top: 50px;
+        font-weight: 400;
+    }
+    
+    .work_card h3 {
+        font-size: 20pt;
+        padding-top: 18px;
+        font-weight: 200;
+    }
+    
+    .work_card h4 {
+        font-size: 14pt;
+        padding-top: 18px;
+    }
+    
+    .work_card p {
+        /* line-height:18pt; */
+        font-size: 14pt;
+        padding-top: 20px;
+        margin: 0 5%;
+    }
+}
+
+@media (max-width: 750px) {
+}

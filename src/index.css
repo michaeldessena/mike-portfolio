@@ -32,4 +32,21 @@ body {
     --accent-color4: #4fb44b; /* cornflower blue */
     --accent-color4-vec: 79, 180, 75;
     --box-color: #333333;
+
+    --title-size: 40pt;
+    --title-padding-bottom: 90px;
+}
+
+@media (max-width: 1000px) { 
+  :root {
+    --title-size: 35pt;
+    --title-padding-bottom: 70px;
+  }
+}
+
+@media (max-width: 600px) { 
+  :root {
+    --title-size: 28pt;
+    --title-padding-bottom: 55px;
+  }
 }

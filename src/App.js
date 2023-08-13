@@ -9,18 +9,20 @@ import Skills from './Containers/skills/Skills';
 function App() {
   return (
     <main className='main'>
+      <div className='navBarSpace'> </div>
       <NavBar />
       <section className='sectionScrollable' id="section1">
         <WhoIAm />
       </section>
-      {/* <span className='section_divisor'></span> */}
+      <span className='section_divisor'></span>
       <section className='sectionScrollable' id="section2">
         <Education />
       </section>
-      {/* <span className='section_divisor'></span> */}
+      <span className='section_divisor'></span>
       <section className='sectionScrollable' id="section3">
         <Work />
       </section>
+      <span className='section_divisor'></span>
       <section className='sectionScrollable' id="section4">
         <Skills />
       </section>

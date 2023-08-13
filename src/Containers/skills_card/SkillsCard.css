@@ -1,6 +1,7 @@
 .skills_card {
-    width: 190px;
-    padding: 0 20px;
+    min-width: 190px;
+    width: 200px;
+    min-height: 400px;
     background-color: var(--primary-color);
     display: block;
     flex-wrap: wrap;
@@ -17,7 +18,7 @@
 
 .skill_card_text {
     width: 100%;
-    height: 60pt;
+    /* height: 60pt; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,6 +28,9 @@
     text-align: center;
     color: var(--accent-color1);
     font-size: 20pt;
+    min-height: 50pt;
+    display: flex;
+    align-items: center;
 }
 
 
