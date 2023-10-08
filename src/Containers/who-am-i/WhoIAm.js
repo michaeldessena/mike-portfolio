@@ -9,7 +9,7 @@ import avatar from './avatar_hd_small.png'
 
 export default function WhoIAm() {
     const [ref, inView] = useInView({
-        threshold: 0.5,
+        threshold: window.height > 600 ? 0.5 : 0.3,
     });
 
     const [cl1, setClass1] = useState("out_of_screen");

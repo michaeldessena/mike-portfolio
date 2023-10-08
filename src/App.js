@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import './App.css';
 
 import NavBar from './Containers/navbar/Navbar';
@@ -7,6 +8,12 @@ import Work from './Containers/work/Work';
 import Skills from './Containers/skills/Skills';
 
 function App() {
+
+  const title = "Michael Dessena portfolio"
+  useEffect(() => {
+    document.title = title;
+  }, []);
+
   return (
     <main className='main'>
       <div className='navBarSpace'> </div>

@@ -3,6 +3,10 @@ import './Work.css'
 
 class Work extends React.Component {
 
+    showDescirptiion = () => {
+
+    };
+
     render(){
         return (
             <div className="work_wrapper">

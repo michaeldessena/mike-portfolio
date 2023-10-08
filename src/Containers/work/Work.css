@@ -165,7 +165,49 @@
         padding-top: 20px;
         margin: 0 5%;
     }
+
+    .work_skills {
+        max-width: 90%;
+        justify-content: space-around;
+    }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 600px) {
+    .work_wrapper {
+        margin: 0 100px;
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .work_card h2 {
+        font-size: 26pt;
+        padding-top: 50px;
+        font-weight: 400;
+    }
+    
+    .work_card h3 {
+        font-size: 20pt;
+        padding-top: 18px;
+        font-weight: 200;
+    }
+    
+    .work_card h4 {
+        font-size: 14pt;
+        padding-top: 18px;
+    }
+
+    .work_card p {
+        line-height: 12pt;
+        font-size: 11.5pt;
+        line-break: loose;
+        padding-top: 20px;
+        margin: 0 5%;
+    }
+    .work_skills {
+        max-width: 95%;
+        justify-content: space-around;
+    }
 }
